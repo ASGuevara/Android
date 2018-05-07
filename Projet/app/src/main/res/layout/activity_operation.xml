@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/bravo_operation"
+            android:id="@+id/bravo_operation"
+            android:textSize="37dp"
+            android:textColor="#0F0"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:text="@string/faux_operation"
+            android:id="@+id/faux_operation"
+            android:textSize="30dp"
+            android:textColor="#F00"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/operation1"
+            android:id="@+id/operation1"
+            android:textSize="50dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/resultat1"
+            android:textSize="40dp"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/operation2"
+            android:id="@+id/operation2"
+            android:textSize="50dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/resultat2"
+            android:textSize="40dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/operation3"
+            android:id="@+id/operation3"
+            android:textSize="50dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/resultat3"
+            android:textSize="40dp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/operation4"
+            android:id="@+id/operation4"
+            android:textSize="50dp"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:id="@+id/resultat4"
+            android:textSize="40dp"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valider_operation"
+            android:id="@+id/valider_operation"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suivant_operation"
+            android:id="@+id/suivant_operation"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_principal"
+        android:id="@+id/menu_principal"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+
+</LinearLayout>

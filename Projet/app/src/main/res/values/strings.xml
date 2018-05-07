@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">ApprendreJouer</string>
+
+    <string name="identification">Identifie-toi !</string>
+    <string name="anonyme">Anonyme</string>
+    <!--<string name="app_name">ApprendreJouer</string>-->
+    <!--<string name="app_name">ApprendreJouer</string>-->
+
+
+    <!--IDENTIFICATION-->
+
+    <string name="nouveau_joueur">Créer nouveau joueur</string>
+    <string name="joueur_1">Joueur 1</string>
+    <string name="joueur_2">Joueur 2</string>
+    <string name="joueur_3">Joueur 3</string>
+    <string name="joueur_4">Joueur 4</string>
+
+
+    <!--NOUVEAUJOUEUR-->
+
+    <string name="nom_joueur">Nom : </string>
+    <string name="prenom_joueur">Prénom : </string>
+    <string name="enregistrer_joueur">Enregistrer</string>
+
+
+    <!--MENU-->
+
+    <string name="bouton_maths">Questions Maths</string>
+    <string name="bouton_culture">Questions Culture Générale</string>
+    <string name="bouton_resultat">Résultats</string>
+    <string name="bouton_histoire">Histoires</string>
+
+
+    <!--MATHS_MENU-->
+
+    <string name="menu_maths">Menu Mathématiques</string>
+    <string name="bouton_addition">Additions</string>
+    <string name="bouton_multiplication">Multiplications</string>
+    <string name="bouton_division">Divisions</string>
+    <string name="bouton_soustraction">Soustractions</string>
+    <string name="chiffre_choisi">Choisisez un chiffre</string>
+
+    <!--OPERATION-->
+    <string name="bravo_operation">Bravo ! Aucune faute !</string>
+    <string name="faux_operation">Mince ! Tu as x fautes. Essaye encore.</string>
+
+    <string name="operation1">x + Y =</string>
+    <string name="operation2">x + Y =</string>
+    <string name="operation3">x + Y =</string>
+    <string name="operation4">x + Y =</string>
+
+    <string name="valider_operation">Valider</string>
+    <string name="suivant_operation">Suivant</string>
+    <string name="menu_principal">Menu</string>
+
+    <string name="resultat1">Résultat 1=</string>
+    <string name="resultat2">Résultat 2</string>
+    <string name="resultat3">Résultat 3</string>
+    <string name="resultat4">Résultat 4</string>
+
+</resources>
