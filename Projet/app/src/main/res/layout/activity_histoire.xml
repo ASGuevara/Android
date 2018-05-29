@@ -3,9 +3,20 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:paddingTop="16dp">
+    android:paddingTop="10dp">
 
 
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal_histoire"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:background="#FFF"
+        />
 
 
 

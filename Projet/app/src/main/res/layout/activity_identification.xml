@@ -3,18 +3,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:paddingTop="10dp">
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal_identification"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
         android:src="@drawable/logo"
         android:visibility="visible"
-        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="#FFF"
         />
 
 
@@ -22,39 +22,40 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/liste_joueurs">
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/joueur_1"
-            android:id="@+id/joueur_1"
-            android:layout_gravity="right"
-            />
+        <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/joueur_1"-->
+            <!--android:id="@+id/joueur_1"-->
+            <!--android:layout_gravity="right"-->
+            <!--/>-->
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/joueur_2"
-            android:id="@+id/joueur_2"
-            android:layout_gravity="center|top"
-            />
+        <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/joueur_2"-->
+            <!--android:id="@+id/joueur_2"-->
+            <!--android:layout_gravity="center|top"-->
+            <!--/>-->
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/joueur_3"
-            android:id="@+id/joueur_3"
-            android:layout_gravity="center"
-            />
+        <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/joueur_3"-->
+            <!--android:id="@+id/joueur_3"-->
+            <!--android:layout_gravity="center"-->
+            <!--/>-->
 
-        <Button
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="@string/joueur_4"
-            android:id="@+id/joueur_4"
-            android:layout_gravity="center|top"
-            />
+        <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/joueur_4"-->
+            <!--android:id="@+id/joueur_4"-->
+            <!--android:layout_gravity="center|top"-->
+            <!--/>-->
 
     </TableLayout>
 

@@ -5,8 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TableLayout;
+
+import com.guevarag.apprendrejouer.JoueurDAO;
+
+import com.guevarag.apprendrejouer.SousMenu.MathActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class IdentificationActivity extends AppCompatActivity {
 
@@ -17,6 +24,22 @@ public class IdentificationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_identification);
+
+        int nombreJoueur=JoueurDAO.compterJoueurs();
+        List<Joueur> listeJoueur=JoueurDAO.trouverTousLesJoueurs();
+        TableLayout tablelayout=(TableLayout)findViewById(R.id.liste_joueurs);
+        int i=0;
+//        for(Joueur ji : listeJoueur){
+//            i++;
+//            String pseudo=ji.getPseudo();
+//            Button newButton=new Button(this);
+//            newButton.setText(pseudo);
+//            newButton.setId(i);
+//            newButton.setWidth(100);
+//            tablelayout.addView(newButton);
+//
+//        }
+
 
         Button nouveau_joueur = (Button) findViewById(R.id.nouveau_joueur);
 
@@ -37,6 +60,19 @@ public class IdentificationActivity extends AppCompatActivity {
 
 
 
+        //     ----------------    BOUTON Main      -------------------------
+        ImageButton bouton_main=(ImageButton) findViewById(R.id.menu_principal_identification);
+
+
+        bouton_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(IdentificationActivity.this,MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+//     ----------------------------------------------------------------
 
 
 

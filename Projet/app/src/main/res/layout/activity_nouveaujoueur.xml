@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:paddingTop="70dp">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
 
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal_nouveaujoueur"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
         android:src="@drawable/logo"
         android:visibility="visible"
-        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:background="#FFF"
         />
 
+    <!--                PSEUDO                -->
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pseudo_joueur"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pseudo_joueur"/>
+
+    </LinearLayout>
+
+    <!--                PRENOM                -->
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,20 +55,20 @@
         android:textSize="20dp"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:id="@+id/prenom_joueur"/>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="20dp" />
+    <!--                NOM                -->
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,17 +77,87 @@
             android:textSize="20dp"/>
 
         <EditText
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:id="@+id/nom_joueur"/>
 
     </LinearLayout>
 
+
+    <!--                SEXE                -->
+
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="50dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sexe_joueur"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+    <RadioGroup
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/sexe_joueur">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fille_joueur"
+            android:id="@+id/fille_joueur"
+            android:textColor="#555555"
+            android:buttonTint="#555555"
+            android:textSize="15dp"
+
+            android:layout_marginRight="30dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/garcon_joueur"
+            android:id="@+id/garcon_joueur"
+            android:textColor="#555555"
+            android:buttonTint="#555555"
+            android:textSize="15dp" />
+
+
+    </RadioGroup>
+
+    <!--                NOM                -->
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/motdepasse_joueur"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/motdepasse_joueur"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum 6 caractères"
+        android:textSize="13dp"/>
+
+
+    <!--                enregistrer                -->
 
     <Button
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enregistrer_joueur"

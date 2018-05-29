@@ -1,5 +1,6 @@
 package com.guevarag.apprendrejouer.SousMenu;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.NumberPicker;
 
+import com.guevarag.apprendrejouer.MenuActivity;
 import com.guevarag.apprendrejouer.OperationActivity;
 import com.guevarag.apprendrejouer.R;
 
@@ -74,5 +76,20 @@ public class MathActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //     ----------------    BOUTON MENU      -------------------------
+        ImageButton bouton_menu=(ImageButton) findViewById(R.id.menu_principal_maths);
+
+
+        bouton_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MathActivity.this,MenuActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+//     ----------------------------------------------------------------
+
     }
 }

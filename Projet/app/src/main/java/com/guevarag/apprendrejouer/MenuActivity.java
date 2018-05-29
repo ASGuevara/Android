@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.guevarag.apprendrejouer.SousMenu.CultureActivity;
@@ -57,7 +58,34 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+//     ----------------    BOUTON MENU      -------------------------
+        ImageButton bouton_menu=(ImageButton) findViewById(R.id.menu_principal_menu);
 
+
+        bouton_menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MenuActivity.this,MenuActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+//     ----------------------------------------------------------------
+
+
+        //     ----------------    BOUTON DECONNEXION      -------------------------
+        Button bouton_deconnexion=(Button) findViewById(R.id.bouton_deconnexion);
+
+
+        bouton_deconnexion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MenuActivity.this,MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
+//     ----------------------------------------------------------------
 
     }
 

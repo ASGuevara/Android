@@ -1,11 +1,16 @@
 package com.guevarag.apprendrejouer;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.guevarag.apprendrejouer.SousMenu.MathActivity;
+import com.guevarag.apprendrejouer.SousMenu.ResultatActivity;
 
 import java.util.ArrayList;
 
@@ -29,7 +34,7 @@ public class OperationActivity extends AppCompatActivity {
                 TextView bravo_operation=(TextView) findViewById(R.id.bravo_operation);
                 int nombreErreur=0;
 
-                TextView result1=(TextView) findViewById(R.id.resultat1);
+                EditText result1=(EditText) findViewById(R.id.resultat1);
                 EditText result2=(EditText) findViewById(R.id.resultat2);
                 EditText result3=(EditText) findViewById(R.id.resultat3);
                 EditText result4=(EditText) findViewById(R.id.resultat4);
@@ -68,24 +73,27 @@ public class OperationActivity extends AppCompatActivity {
 
         Button suivant=(Button) findViewById(R.id.suivant_operation);
 
-        valider.setOnClickListener(new View.OnClickListener() {
+        suivant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+                Intent intent=new Intent(OperationActivity.this,MathActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
             }
         });
 
 
 
+        ImageButton menu=(ImageButton) findViewById(R.id.menu_principal_operation);
 
-
-
-
-
-
-
-
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(OperationActivity.this,MenuActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            }
+        });
 
 
 

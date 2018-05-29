@@ -6,10 +6,21 @@
     <!--<string name="app_name">ApprendreJouer</string>-->
     <!--<string name="app_name">ApprendreJouer</string>-->
 
+    <!--BOUTON HOME-->
+    <string name="menu_principal_identification">Menu</string>
+    <string name="menu_principal_nouveaujoueur">Menu</string>
+    <string name="menu_principal_menu">Menu</string>
+    <string name="menu_principal_maths">Menu</string>
+    <string name="menu_principal_operation">Menu</string>
+    <string name="menu_principal_culture">Menu</string>
+    <string name="menu_principal_resultat">Menu</string>
+    <string name="menu_principal_histoire">Menu</string>
+
 
     <!--IDENTIFICATION-->
 
     <string name="nouveau_joueur">Créer nouveau joueur</string>
+    <string name="liste_oueurs">Joueurs :</string>
     <string name="joueur_1">Joueur 1</string>
     <string name="joueur_2">Joueur 2</string>
     <string name="joueur_3">Joueur 3</string>
@@ -18,8 +29,13 @@
 
     <!--NOUVEAUJOUEUR-->
 
+    <string name="pseudo_joueur">Pseudo : </string>
     <string name="nom_joueur">Nom : </string>
     <string name="prenom_joueur">Prénom : </string>
+    <string name="sexe_joueur">Tu es :</string>
+    <string name="fille_joueur">Une fille</string>
+    <string name="garcon_joueur">Un garcon</string>
+    <string name="motdepasse_joueur">Mot de passe :</string>
     <string name="enregistrer_joueur">Enregistrer</string>
 
 
@@ -29,6 +45,7 @@
     <string name="bouton_culture">Questions Culture Générale</string>
     <string name="bouton_resultat">Résultats</string>
     <string name="bouton_histoire">Histoires</string>
+    <string name="bouton_deconnexion">Déconnexion</string>
 
 
     <!--MATHS_MENU-->
@@ -51,7 +68,6 @@
 
     <string name="valider_operation">Valider</string>
     <string name="suivant_operation">Suivant</string>
-    <string name="menu_principal">Menu</string>
 
     <string name="resultat1">Résultat 1=</string>
     <string name="resultat2">Résultat 2</string>

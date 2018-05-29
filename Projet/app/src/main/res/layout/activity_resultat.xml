@@ -6,10 +6,17 @@
     android:paddingTop="16dp">
 
 
-
-
-
-
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal_resultat"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:background="#FFF"
+        />
 
 
 

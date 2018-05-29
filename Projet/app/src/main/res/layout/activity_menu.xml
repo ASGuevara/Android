@@ -3,57 +3,70 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:paddingTop="116dp">
+    android:paddingTop="10dp">
 
-
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_principal_menu"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:background="#FFF"
+        android:layout_marginBottom="50dp"
+        />
 
 
     <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_gravity="center">
-
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp">
 
         <ImageButton
+            android:id="@+id/bouton_maths"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/logo_maths"
-            android:id="@+id/bouton_maths"
-            android:visibility="visible"
-            />
+            android:visibility="visible" />
 
         <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/logo_culture"
-            android:visibility="visible"
             android:id="@+id/bouton_culture"
-            android:layout_alignParentRight="true"
-            />
-
-        <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_histoire"
-            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logo_culture"
+            android:visibility="visible" />
+
+        <ImageButton
             android:id="@+id/bouton_histoire"
-            android:layout_alignParentBottom="true"
-            />
-
-        <ImageButton
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo_resultat"
-            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/logo_histoire"
+            android:visibility="visible" />
+
+        <ImageButton
             android:id="@+id/bouton_resultat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            />
+            android:src="@drawable/logo_resultat"
+            android:visibility="visible" />
 
     </RelativeLayout>
 
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_deconnexion"
+        android:id="@+id/bouton_deconnexion"
+        android:layout_gravity="end"/>
 
 
 </LinearLayout>
